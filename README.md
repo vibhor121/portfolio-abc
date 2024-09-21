@@ -2,7 +2,8 @@
 
 Welcome to my portfolio website! This project showcases my skills, projects, and experience. It is built using modern web development tools like React, Tailwind CSS, Framer Motion for animations, and Hash Router for smooth navigation.
 
-# Demo
+## *visit my portfolio* 
+- link :- https://rohit769portfolio.netlify.app/
 
 
 ## Tech Stack
