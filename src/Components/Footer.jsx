@@ -11,17 +11,19 @@ import {
 
 // Social links data
 const socialLinks = [
-  {
-    icon: <FaFacebookF />,
-    url: "https://www.facebook.com/profile.php?id=100008196608825",
-  },
-  { icon: <FaXTwitter />, url: "https://x.com/rebelindia01" },
+
+ 
   {
     icon: <FaLinkedinIn />,
     url: "https://www.linkedin.com/in/rohit-verma769/",
   },
   { icon: <FaGithub />, url: "https://github.com/rohit7979" },
+  { icon: <FaXTwitter />, url: "https://x.com/rebelindia01" },
   { icon: <FaInstagram />, url: "https://www.instagram.com/l_rohitsoni_l/" },
+  // {
+  //   icon: <FaFacebookF />,
+    
+  // },
 ];
 
 // Footer component

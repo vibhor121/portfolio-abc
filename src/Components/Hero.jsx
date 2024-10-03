@@ -111,7 +111,7 @@ const Hero = () => {
               </motion.h1>
               <a
                 href="/rohit_resume.pdf"
-                download={"resume.pdf"}
+                download={"rohit_resume.pdf"}
                 target="_blank"
               >
                 <motion.div
@@ -169,7 +169,7 @@ const Hero = () => {
               <FaSquareXTwitter className="text-black" />
             </div>
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href="https://www.instagram.com/l_rohitsoni_l/"
             target="_blank"
             initial={{ opacity: 0, y: -50 }}
@@ -179,7 +179,7 @@ const Hero = () => {
             <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
               <BsInstagram className="text-pink-400" />
             </div>
-          </motion.a>
+          </motion.a> */}
         </div>
       </div>
       {/* scroll wheel */}

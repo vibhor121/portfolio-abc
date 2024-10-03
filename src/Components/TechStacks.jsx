@@ -16,8 +16,8 @@ const variants = (duration) => ({
 
 const TechStacks = () => {
   return (
-    <div className="mt-16 pt-20 w-fit mx-auto">
-      <h1 className="text-5xl font-bold text-center md:mb-20 mb-12 text-white josefin-sans-font">
+    <div className="mt-10 pt-20 w-fit mx-auto">
+      <h1 className="text-[3rem] font-bold text-center md:mb-10 mb-12 text-white josefin-sans-font">
         Technologies
       </h1>
 
@@ -99,7 +99,7 @@ const TechStacks = () => {
         </motion.div>
       </div>
 
-      <div className="mx-auto md:scale-110">
+      <div className="mx-auto md:scale-80">
         <img src="/Group1940.svg" alt="" />
       </div>
     </div>

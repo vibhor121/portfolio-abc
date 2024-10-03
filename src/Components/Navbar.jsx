@@ -12,7 +12,7 @@ const Navbar = () => {
 
 
         <a
-            href="#home"
+            href="#"
             className="cursor-pointer hover:text-purple-400 transition duration-300"
           >
             <FaCode className="text-4xl" />

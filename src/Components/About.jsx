@@ -54,11 +54,11 @@ const About = () => {
                   <FaSquareXTwitter className="text-black" />
                 </div>
               </a>
-              <a href="https://www.instagram.com/l_rohitsoni_l/" target="_blank">
+              {/* <a href="https://www.instagram.com/l_rohitsoni_l/" target="_blank">
                 <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
                   <BsInstagram className="text-pink-400" />
                 </div>
-              </a>
+              </a> */}
             </div>
           </div>
         </motion.div>
@@ -92,7 +92,7 @@ const About = () => {
                 className="w-[80%] h-[80%] md:w-full md:h-full object-cover bg-transparent" // Smaller on mobile
               />
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <img
                 src="/rohit2.jpg"
                 alt="Your Photo 2"
@@ -105,7 +105,7 @@ const About = () => {
                 alt="Your Photo 3"
                 className="w-[80%] h-[80%] md:w-full md:h-full object-cover bg-transparent" // Smaller on mobile
               />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </motion.div>
       </div>

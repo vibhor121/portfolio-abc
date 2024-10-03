@@ -144,13 +144,13 @@ const ContactPage = () => {
                   >
                     <FaXTwitter />
                   </a>
-                  <a
+                  {/* <a
                     href="https://www.instagram.com/l_rohitsoni_l/"
                     target="_blank"
                     className="text-pink-500"
                   >
                     <FaInstagram />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </motion.div>
