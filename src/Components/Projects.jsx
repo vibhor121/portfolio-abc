@@ -24,24 +24,20 @@ const Projects = () => {
               Featured Project
             </h1>
             <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              Fundmitra - Crowdfunding Platform
+              Website Builder
             </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              The Fundmitra Platform is a web-based solution designed to assist
-              students who face financial challenges in their education. This
-              platform provides a space for students to create fundraising
-              projects and allows donors to contribute to these causes. <br />
-              Tech Stacks :- Nodejs, Express, MongoDB, ReactJs, Tailwindcss, JS,
-              HTML, CSS
+              A modern website builder application that allows users to create and customize their own websites with a simple and intuitive drag-and-drop interface. Users can select templates, customize backgrounds, and apply various design options with secure authentication through Auth0. <br />
+              Tech Stacks :- React, JavaScript, HTML, CSS, Auth0
             </p>
             <div className="flex gap-6 mt-9 text-3xl">
               <a
-                href="https://github.com/rohit7979/Web-Wrestlers_048"
+                href="https://github.com/vibhor121/Clause-Cloud_029"
                 target="_blank"
               >
                 <FaGithub />
               </a>
-              <a href="https://fundmitra.netlify.app/" target="_blank">
+              <a href="https://clause-cloud-029-rh9lzo3g0-vibhors-projects-d6b1e7df.vercel.app/" target="_blank">
                 <IoGlobeOutline />
               </a>
             </div>
@@ -49,12 +45,12 @@ const Projects = () => {
           {/* img */}
           <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 md:relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a
-              href="https://github.com/rohit7979/Web-Wrestlers_048"
+              href="https://github.com/vibhor121/Clause-Cloud_029"
               target="_blank"
             >
               <img
-                src="/fundmitra.png"
-                alt="Project Screenshot"
+                src="/websitebuilder.png"
+                alt="Website Builder Screenshot"
                 className="rounded-lg"
               />
             </a>
@@ -73,27 +69,20 @@ const Projects = () => {
               Featured Project
             </h1>
             <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              Beehome - Real Estate and Accommodation System
+              Masai Movies
             </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              Beehome is a cutting-edge real estate and accommodation platform
-              tailored for Bangalore's fast-paced housing market. Designed to
-              overcome challenges like outdated listings and unreliable
-              contacts, Beehome offers users a streamlined experience to find
-              and evaluate properties efficiently. With features such as
-              up-to-date listings, advanced search filters, detailed property
-              pages, and integrated maps, Beehome simplifies the search for the
-              perfect home or apartment in Bangalore. <br />
-              Tech Stacks :- ReactJs, Tailwindcss, Chakra UI, API, JS, HTML, CSS
+              Masai Movies is an aggregator service for the entertainment industry that assists users with information and ticketing for movies. The platform features a user-friendly interface with real-time booking, seat selection, login authentication, and personalized recommendations. It's fully responsive and provides a seamless movie booking experience. <br />
+              Tech Stacks :- HTML, CSS, JavaScript, JSON Server, LocalStorage
             </p>
             <div className="flex gap-6 mt-9 text-3xl md:justify-end">
               <a
-                href="https://github.com/RahulGeorge96/Sovereignty-SQL_033"
+                href="https://github.com/Sahilz9/Salesforce-Sages_084"
                 target="_blank"
               >
                 <FaGithub />
               </a>
-              <a href="https://beehome-realestate.netlify.app/" target="_blank">
+              <a href="https://delicate-cucurucho-42501a.netlify.app/" target="_blank">
                 <IoGlobeOutline />
               </a>
             </div>
@@ -101,12 +90,12 @@ const Projects = () => {
           {/* img */}
           <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a
-              href="https://github.com/RahulGeorge96/Sovereignty-SQL_033"
+              href="https://github.com/Sahilz9/Salesforce-Sages_084"
               target="_blank"
             >
               <img
-                src="/beehome1.png"
-                alt="Project Screenshot"
+                src="/masaimovies.png"
+                alt="Masai Movies Screenshot"
                 className="rounded-lg"
               />
             </a>
@@ -125,26 +114,20 @@ const Projects = () => {
               Featured Project
             </h1>
             <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              FWRD.com
+              Dmart Clone
             </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              FWRD.com (Forward) is a modern e-commerce platform that offers a
-              wide range of fashion apparel, dresses, and designer brands. This
-              project is a clone of the FWRD website, which focuses on
-              delivering a seamless shopping experience by offering excellent
-              customer service and showcasing an extensive collection of
-              designers—ranging from established fashion houses to emerging
-              talents. <br />
-              Tech Stacks :- HTML, CSS, JAVASCRIPT, API, BOOTSTRAP
+              A comprehensive e-commerce platform clone of Dmart, India's leading retail chain. This project replicates the core functionality of Dmart's online shopping experience, featuring product browsing, cart management, user authentication, and seamless checkout process. The platform offers a wide range of products with competitive pricing and user-friendly interface. <br />
+              Tech Stacks :- HTML, CSS,  Bootstrap .
             </p>
             <div className="flex gap-6 mt-9 text-3xl">
               <a
-                href="https://github.com/rohit7979/Spotify-Strategists_022"
+                href="https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345"
                 target="_blank"
               >
                 <FaGithub />
               </a>
-              <a href="https://newfwrd.netlify.app/" target="_blank">
+              <a href="https://syntax-saadhana-2345.netlify.app/" target="_blank">
                 <IoGlobeOutline />
               </a>
             </div>
@@ -152,12 +135,12 @@ const Projects = () => {
           {/* img */}
           <div className="md:w-[30%] w-[85%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a
-              href="https://github.com/rohit7979/Spotify-Strategists_022"
+              href="https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345"
               target="_blank"
             >
               <img
-                src="/fwrd.png"
-                alt="Project Screenshot"
+                src="/DmartClone.png"
+                alt="Dmart Clone Screenshot"
                 className="rounded-lg"
               />
             </a>
@@ -176,27 +159,21 @@ const Projects = () => {
               Featured Project
             </h1>
             <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              NEXUS B2B-CONNECTION
+              Viatours Figma
             </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              NEXUS B2B-CONNECTION is a comprehensive platform designed for
-              businesses to streamline their sales processes by combining a vast
-              buyer database of over 270 million contacts with powerful sales
-              engagement and automation tools. This project is inspired by
-              Apollo.io and serves as a clone, providing businesses with tools
-              to grow, engage, and convert prospects into customers more
-              effectively. <br />
-              Tech Stacks :- HTML, CSS, SASS, BOOTSTRAP
+              Viatours Figma is a travel and tourism platform designed to provide users with comprehensive travel planning and booking services. This project showcases modern UI/UX design principles with a focus on creating an intuitive and visually appealing interface for travel enthusiasts. The platform offers destination information, booking capabilities, and travel recommendations. <br />
+              Tech Stacks :- HTML, CSS, Bootstrap, Figma Design
             </p>
             <div className="flex gap-6 mt-9 text-3xl md:justify-end">
               <a
-                href="https://github.com/Mayank1st/Beas-Boolean-009"
+                href="https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345"
                 target="_blank"
               >
                 <FaGithub />
               </a>
 
-              <a href="https://nexus-b2b.netlify.app/" target="_blank">
+              <a href="https://figma-syntax-saadhana-2345.netlify.app/" target="_blank">
                 <IoGlobeOutline />
               </a>
 
@@ -205,12 +182,12 @@ const Projects = () => {
           {/* img */}
           <div className="md:w-[30%] w-[90%] mb-10 relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a
-              href="https://github.com/Mayank1st/Beas-Boolean-009"
+              href="https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345"
               target="_blank"
             >
               <img
-                src="/nexus.png"
-                alt="Project Screenshot"
+                src="/viatorous.png"
+                alt="Viatours Figma Screenshot"
                 className="rounded-lg"
               />
             </a>

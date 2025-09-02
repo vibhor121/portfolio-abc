@@ -37,7 +37,7 @@ const Navbar = () => {
             About Me
           </a>
           <a
-            href="/rohit_resume.pdf"
+            href="/vibhor_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer hover:text-purple-400 transition duration-300"

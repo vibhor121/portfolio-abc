@@ -15,11 +15,11 @@ const socialLinks = [
  
   {
     icon: <FaLinkedinIn />,
-    url: "https://www.linkedin.com/in/rohit-verma769/",
+    url: "https://www.linkedin.com/in/vibhor-mahajan-946036283/",
   },
-  { icon: <FaGithub />, url: "https://github.com/rohit7979" },
-  { icon: <FaXTwitter />, url: "https://x.com/rebelindia01" },
-  { icon: <FaInstagram />, url: "https://www.instagram.com/l_rohitsoni_l/" },
+  { icon: <FaGithub />, url: "https://github.com/vibhor121" },
+  { icon: <FaXTwitter />, url: "https://x.com/mahajanvibhor8" },
+ 
   // {
   //   icon: <FaFacebookF />,
     
@@ -60,18 +60,18 @@ const Footer = () => {
               className="text-xl text-designColor hover:underline"
               href="mailto:rebelindia01@gmail.com"
             >
-              rebelindia01@gmail.com
+              mahajanvibhor8@gmail.com
             </a>
           </div>
           <div className="flex items-center text-white mb-3">
             <FaWhatsapp className="mr-2 text-xl text-green-500" />
-            <span className="text-lg">+91 7979718309</span>
+            <span className="text-lg">+91 9877309271</span>
           </div>
         </div>
 
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Rohit Verma. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Vibhor. All Rights Reserved.
           </p>
         </div>
       </div>

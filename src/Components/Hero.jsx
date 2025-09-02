@@ -25,7 +25,7 @@ const Hero = () => {
               <div>
                 <span className="ml-5 relative inline-block">
                   <span className="text-[#8E3DDE] relative z-10">
-                    Rohit Verma
+                    Vibhor
                   </span>
                   <svg
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-auto"
@@ -50,10 +50,10 @@ const Hero = () => {
               </span>
               <span className="ml-5 relative inline-block">
                 <span className="text-[#8E3DDE] relative z-10">
-                  Rohit Verma
+                      Vibhor
                 </span>
                 <svg
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-auto"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[150%] h-auto"
                   viewBox="0 0 490 175"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,8 +110,8 @@ const Hero = () => {
                 proficient in crafting dynamic visually engaging websites with seamless front-end and robust back-end systems.
               </motion.h1>
               <a
-                href="/rohit_resume.pdf"
-                download={"rohit_resume.pdf"}
+                href="/vibhor_resume.pdf"
+                download={"vibhor_resume.pdf"}
                 target="_blank"
               >
                 <motion.div
@@ -137,7 +137,7 @@ const Hero = () => {
         {/* socials */}
         <div className="text-white text-3xl hidden md:flex flex-col gap-12">
           <motion.a
-            href="https://github.com/rohit7979"
+            href="https://github.com/vibhor121"
             target="_blank"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -148,7 +148,7 @@ const Hero = () => {
             </div>
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/rohit-verma769/"
+            href="https://www.linkedin.com/in/vibhor-mahajan-946036283/"
             target="_blank"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ const Hero = () => {
             </div>
           </motion.a>
           <motion.a
-            href="https://x.com/rebelindia01"
+            href="https://x.com/mahajanvibhor8"
             target="_blank"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}

@@ -29,27 +29,31 @@ const About = () => {
         >
           <div className="m-8 md:text-lg">
             <p className="text-white/80 md:w-[90%]">
-            Hello, I'm Rohit, a Full Stack Developer with a passion for crafting digital solutions that enhance online experiences. I hold a bachelor's degree in commerce from Binod Bihari Mahto Koylanchal University Dhanbad, and my journey into software development stems from a deep interest in creating impactful digital products. I gained my full stack development skills through a comprehensive course at Masai School, where I honed my expertise in the MERN stack. Over time, I've built responsive, user-friendly applications, and I’m enthusiastic about leveraging my skills to drive innovation in the ever-evolving tech industry.
+            Hi, I'm Vibhor, a Full Stack Developer passionate about building scalable and user-friendly digital solutions. I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and have hands-on experience with modern frameworks and tools like Next.js, Tailwind CSS, ShadCN, and FastAPI.
+
+I worked as a Software Engineer at MfilterIt, where I contributed to frontend development with React.js and Next.js, while also gaining backend experience with Python and FastAPI. My role involved creating responsive interfaces, optimizing performance, and delivering production-grade features in an agile environment.
+
+Over time, I’ve built a variety of user-focused applications, ranging from management systems to dynamic web platforms, with a strong emphasis on clean code, scalability, and great user experience. I’m enthusiastic about leveraging my skills to drive innovation and contribute meaningfully to impactful projects in the ever-evolving tech industry.
             </p>
           </div>
           {/* socials */}
           <div className="ml-7">
             <div className="text-white text-3xl flex gap-10">
               <a
-                href="https://www.linkedin.com/in/rohit-verma769/"
+                href="https://www.linkedin.com/in/vibhor-mahajan-946036283/"
                 target="_blank"
               >
                 <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
                   <FaLinkedin className=" text-blue-400 " />
                 </div>
               </a>
-              <a href="https://github.com/rohit7979" target="_blank">
+              <a href="https://github.com/vibhor121" target="_blank">
                 <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
                   <FaGithub className="text-black" />
                 </div>
               </a>
 
-              <a href="https://x.com/rebelindia01" target="_blank">
+              <a href="https://x.com/mahajanvibhor8" target="_blank">
                 <div className="bg-purple-50 hover:scale-125 transition 3s socShad rounded-full p-2">
                   <FaSquareXTwitter className="text-black" />
                 </div>
@@ -87,7 +91,7 @@ const About = () => {
           >
             <SwiperSlide>
               <img
-                src="/rohit4.jpg"
+                src="/vibhor1.jpg"
                 alt="Your Photo 1"
                 className="w-[80%] h-[80%] md:w-full md:h-full object-cover bg-transparent" // Smaller on mobile
               />

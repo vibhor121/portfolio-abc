@@ -30,11 +30,19 @@ const ContactPage = () => {
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
       try {
-        await emailjs.sendForm(
-          "service_dtvemqp", // Replace with your EmailJS service ID
-          "template_jfupsn4", // Replace with your EmailJS template ID
-          form.current,       // Form ref for EmailJS
-          "dZSMWmYkOgoNbXd_G" // Replace with your EmailJS public key
+        // Add your email as a template parameter
+        const templateParams = {
+          from_name: values.from_name,
+          from_email: values.from_email,
+          message: values.message,
+          to_email: "vibhorjandial7@gmail.com" // Your EmailJS connected email address
+        };
+        
+        await emailjs.send(
+          "service_tzscu9h", // Your new EmailJS service ID
+          "template_jfupsn4", // Your EmailJS template ID
+          templateParams,
+          "8gKP5jyLg9rrPIh-u" // Your EmailJS public key
         );
         setMessageSent(true);
         resetForm();
@@ -89,7 +97,7 @@ const ContactPage = () => {
                   Address
                 </h1>
                 <p className="text-lg w-4/5 text-gray-300 mt-4 my-1">
-                  Dhanbad, Jharkhand 828111
+                  Udhampur, Jammu and Kashmir 182101
                 </p>
               </div>
               {/* <div>
@@ -117,9 +125,9 @@ const ContactPage = () => {
                   Details
                 </h1>
                 <p className="text-lg text-gray-300 my-2 mt-4">
-                  +91-7979718309
+                  +91-9877309271
                 </p>
-                <p className="text-lg text-gray-300 ">rebelindia01@gmail.com</p>
+                <p className="text-lg text-gray-300 ">mahajanvibhor8@gmail.com</p>
               </div>
               <div className="md:mx-auto">
                 <p className="text-2xl dm-sans-bold w-fit text-purple-600 mb-1 border-b-[3px] border-purple-500">
@@ -127,18 +135,18 @@ const ContactPage = () => {
                 </p>
                 <div className="flex text-3xl mt-4 gap-6">
                   <a
-                    href="https://www.linkedin.com/in/rohit-verma769/"
+                    href="https://www.linkedin.com/in/vibhor-mahajan-946036283/"
                     target="_blank"
                     className="text-blue-500"
                   >
                     <FaLinkedin />
                   </a>
 
-                  <a href="https://github.com/rohit7979" target="_blank">
+                  <a href="https://github.com/vibhor121" target="_blank">
                     <FaGithub className="text-white" />
                   </a>
                   <a
-                    href="https://x.com/rebelindia01"
+                    href="https://x.com/mahajanvibhor8"
                     target="_blank"
                     className="text-white"
                   >
