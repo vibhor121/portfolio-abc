@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCode } from "react-icons/fa";
-import { MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward, MdDownload, MdVisibility } from "react-icons/md";
 
 const Navbar = () => {
 
@@ -34,14 +34,26 @@ const Navbar = () => {
             >
               About Me
             </a>
-            <a
-              href="/vibhor_resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer hover:text-purple-400 transition duration-300"
-            >
-              Resume
-            </a>
+            <div className="flex items-center gap-2">
+              <a
+                href="/vibhor_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:text-purple-400 transition duration-300 flex items-center gap-1"
+                title="View Resume"
+              >
+                <MdVisibility className="text-sm" />
+                Resume
+              </a>
+              <a
+                href="/vibhor_resume.pdf"
+                download="vibhor_resume.pdf"
+                className="cursor-pointer hover:text-purple-400 transition duration-300"
+                title="Download Resume"
+              >
+                <MdDownload className="text-sm" />
+              </a>
+            </div>
           </div>
           <div className="flex">
             <a href="#contact">
@@ -87,14 +99,26 @@ const Navbar = () => {
             >
               About Me
             </a>
-            <a
-              href="/vibhor_resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer hover:text-purple-400 transition duration-300 text-lg font-light"
-            >
-              Resume
-            </a>
+            <div className="flex items-center gap-3">
+              <a
+                href="/vibhor_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:text-purple-400 transition duration-300 text-lg font-light flex items-center gap-2"
+                title="View Resume"
+              >
+                <MdVisibility className="text-lg" />
+                Resume
+              </a>
+              <a
+                href="/vibhor_resume.pdf"
+                download="vibhor_resume.pdf"
+                className="cursor-pointer hover:text-purple-400 transition duration-300"
+                title="Download Resume"
+              >
+                <MdDownload className="text-lg" />
+              </a>
+            </div>
             <a href="#contact" className="mt-2">
               <button className="flex items-center gap-2 text-sm btn-grad text-white px-4 py-2 rounded-full font-light transition duration-300">
                 Contact Me{" "}
