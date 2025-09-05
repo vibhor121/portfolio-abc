@@ -7,6 +7,19 @@ import { motion } from "framer-motion";
 import Typed from "./Typed";
 
 const Hero = () => {
+  const handleDownloadCV = () => {
+    // Open CV in new tab for viewing
+    window.open('/vibhor_resume.pdf', '_blank', 'noopener,noreferrer');
+    
+    // Create a temporary link to trigger download
+    const link = document.createElement('a');
+    link.href = '/vibhor_resume.pdf';
+    link.download = 'vibhor_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <div className="md:flex md:w-[90%] md:items-center md:justify-between mt-16">
@@ -109,28 +122,23 @@ const Hero = () => {
               >
                 proficient in crafting dynamic visually engaging websites with seamless front-end and robust back-end systems.
               </motion.h1>
-              <a
-                href="/vibhor_resume.pdf"
-                download={"vibhor_resume.pdf"}
-                target="_blank"
+              <motion.div
+                className="rounded-full w-fit flex items-center py-2 px-5 mt-8 gap-2 btn-grad cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.5,
+                  type: "spring",
+                  stiffness: 150,
+                }}
+                onClick={handleDownloadCV}
               >
-                <motion.div
-                  className="rounded-full w-fit flex items-center py-2 px-5 mt-8 gap-2 btn-grad cursor-pointer"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    delay: 0.8,
-                    duration: 0.5,
-                    type: "spring",
-                    stiffness: 150,
-                  }}
-                >
-                  <GoDownload className="text-white" />
-                  <span className="text-white josefin-sans-font mt-1">
-                    Download CV
-                  </span>
-                </motion.div>
-              </a>
+                <GoDownload className="text-white" />
+                <span className="text-white josefin-sans-font mt-1">
+                  Download CV
+                </span>
+              </motion.div>
             </div>
           </div>
         </div>
