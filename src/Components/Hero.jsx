@@ -3,14 +3,17 @@ import { BsInstagram } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { GoDownload } from "react-icons/go";
+import { FaEye } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Typed from "./Typed";
 
 const Hero = () => {
-  const handleDownloadCV = () => {
+  const handleViewCV = () => {
     // Open CV in new tab for viewing
     window.open('/vibhor_resume.pdf', '_blank', 'noopener,noreferrer');
-    
+  };
+
+  const handleDownloadCV = () => {
     // Create a temporary link to trigger download
     const link = document.createElement('a');
     link.href = '/vibhor_resume.pdf';
@@ -122,23 +125,42 @@ const Hero = () => {
               >
                 proficient in crafting dynamic visually engaging websites with seamless front-end and robust back-end systems.
               </motion.h1>
-              <motion.div
-                className="rounded-full w-fit flex items-center py-2 px-5 mt-8 gap-2 btn-grad cursor-pointer"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: 0.8,
-                  duration: 0.5,
-                  type: "spring",
-                  stiffness: 150,
-                }}
-                onClick={handleDownloadCV}
-              >
-                <GoDownload className="text-white" />
-                <span className="text-white josefin-sans-font mt-1">
-                  Download CV
-                </span>
-              </motion.div>
+              <div className="flex gap-4 mt-8">
+                <motion.div
+                  className="rounded-full w-fit flex items-center py-2 px-5 gap-2 btn-grad cursor-pointer"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.8,
+                    duration: 0.5,
+                    type: "spring",
+                    stiffness: 150,
+                  }}
+                  onClick={handleViewCV}
+                >
+                  <FaEye className="text-white" />
+                  <span className="text-white josefin-sans-font mt-1">
+                    View CV
+                  </span>
+                </motion.div>
+                <motion.div
+                  className="rounded-full w-fit flex items-center py-2 px-5 gap-2 btn-grad cursor-pointer"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.9,
+                    duration: 0.5,
+                    type: "spring",
+                    stiffness: 150,
+                  }}
+                  onClick={handleDownloadCV}
+                >
+                  <GoDownload className="text-white" />
+                  <span className="text-white josefin-sans-font mt-1">
+                    Download CV
+                  </span>
+                </motion.div>
+              </div>
             </div>
           </div>
         </div>
