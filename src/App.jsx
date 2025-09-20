@@ -1,6 +1,7 @@
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
+import Experience from "./Components/Experience";
 import StarsCanvas from "./Components/Stars";
 import About from "./Components/About";
 import ContactForm from "./Components/ContactForm";
@@ -20,6 +21,9 @@ function App() {
           </section>
           <section id="skills">
             <TechStacks />
+          </section>
+          <section id="experience">
+            <Experience />
           </section>
           <section id="projects">
             <Projects />

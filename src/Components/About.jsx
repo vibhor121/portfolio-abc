@@ -31,9 +31,9 @@ const About = () => {
             <p className="text-white/80 md:w-[90%]">
             Hi, I'm Vibhor, a Full Stack Developer passionate about building scalable and user-friendly digital solutions. I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and have hands-on experience with modern frameworks and tools like Next.js, Tailwind CSS, ShadCN, and FastAPI.
 
-I worked as a Software Engineer at MfilterIt, where I contributed to frontend development with React.js and Next.js, while also gaining backend experience with Python and FastAPI. My role involved creating responsive interfaces, optimizing performance, and delivering production-grade features in an agile environment.
+With professional experience as a Software Engineer, I've contributed to both frontend and backend development, creating responsive interfaces, optimizing performance, and delivering production-grade features in agile environments.
 
-Over time, I’ve built a variety of user-focused applications, ranging from management systems to dynamic web platforms, with a strong emphasis on clean code, scalability, and great user experience. I’m enthusiastic about leveraging my skills to drive innovation and contribute meaningfully to impactful projects in the ever-evolving tech industry.
+Over time, I've built a variety of user-focused applications, ranging from management systems to dynamic web platforms, with a strong emphasis on clean code, scalability, and great user experience. I'm enthusiastic about leveraging my skills to drive innovation and contribute meaningfully to impactful projects in the ever-evolving tech industry.
             </p>
           </div>
           {/* socials */}

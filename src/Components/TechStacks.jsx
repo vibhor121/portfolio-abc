@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaPython } from "react-icons/fa";
+import { SiFastapi } from "react-icons/si";
 
 const variants = (duration) => ({
   initial: { y: -10 },
@@ -58,6 +60,20 @@ const TechStacks = () => {
           animate="animate"
         >
           <img src="/ts.png" className="md:w-12 w-8" alt="" />
+        </motion.div>
+        <motion.div
+          variants={variants(6)}
+          initial="initial"
+          animate="animate"
+        >
+          <FaPython className="text-4xl md:text-5xl text-blue-500" />
+        </motion.div>
+        <motion.div
+          variants={variants(6.5)}
+          initial="initial"
+          animate="animate"
+        >
+          <SiFastapi className="text-4xl md:text-5xl text-green-500" />
         </motion.div>
       </div>
 

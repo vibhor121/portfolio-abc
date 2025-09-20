@@ -57,6 +57,12 @@ const Navbar = () => {
               Skills
             </a>
             <a
+              href="#experience"
+              className="cursor-pointer hover:text-purple-400 transition duration-300"
+            >
+              Experience
+            </a>
+            <a
               href="#projects"
               className="cursor-pointer hover:text-purple-400 transition duration-300"
             >
@@ -136,6 +142,13 @@ const Navbar = () => {
                 onClick={closeMobileMenu}
               >
                 Skills
+              </a>
+              <a
+                href="#experience"
+                className="cursor-pointer hover:text-purple-400 transition duration-300 text-lg font-light"
+                onClick={closeMobileMenu}
+              >
+                Experience
               </a>
               <a
                 href="#projects"
