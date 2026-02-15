@@ -1,9 +1,47 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaBriefcase, FaCode, FaChartLine, FaMobile, FaRocket } from "react-icons/fa";
+import { FaBriefcase, FaCode, FaChartLine, FaMobile, FaRocket, FaSitemap, FaShieldAlt, FaCogs, FaDatabase, FaComments, FaPalette } from "react-icons/fa";
 
 const Experience = () => {
   const experiences = [
+    {
+      company: "Vendosmart (ProQsmart)",
+      position: "Frontend Developer",
+      duration: "December 2025 - Present",
+      icon: FaBriefcase,
+      achievements: [
+        {
+          icon: FaSitemap,
+          title: "Enterprise B2B Procurement Platform Architecture",
+          description: "Architected an enterprise B2B procurement platform using Next.js, React, and TypeScript within a Turborepo monorepo architecture, designing modular core packages for API clients, state management, hooks, and shared UI components to ensure scalability and code reusability across multiple portals"
+        },
+        {
+          icon: FaShieldAlt,
+          title: "Secure Dual-Portal Authentication System",
+          description: "Engineered a secure dual-portal authentication system with Firebase integration and isolated storage contexts for buyer and supplier workflows; implemented an API proxy pattern to protect backend endpoints and automated JWT token injection via request interceptors"
+        },
+        {
+          icon: FaCogs,
+          title: "End-to-End Procurement Workflow",
+          description: "Built a comprehensive end-to-end procurement workflow, including RFQ creation and management, supplier quotation submission, bid comparison with visual heatmap analysis, contract generation, and order fulfillment, incorporating workflow state management and multi-level approval routing"
+        },
+        {
+          icon: FaDatabase,
+          title: "Type-Safe API Service Layer",
+          description: "Developed a type-safe API service layer using TypeScript generics and auto-generated interfaces from backend schemas; created reusable CRUD abstractions with query builders and composable filters to standardize data operations across all DocTypes"
+        },
+        {
+          icon: FaComments,
+          title: "Real-Time Collaboration Features",
+          description: "Implemented real-time collaboration features using WebSocket connections for live buyer–supplier messaging, instant bid updates, and push notifications; integrated with Zustand to enable optimistic UI updates and reliable state synchronization"
+        },
+        {
+          icon: FaPalette,
+          title: "Component-Driven Development with Storybook",
+          description: "Leveraged Storybook for component-driven development of a Mantine-based design system, enabling isolated component testing and interactive development of advanced UI elements such as inline-editable data tables, document preview modules, dynamic form builders with validation, and specialized procurement components to maintain UX consistency across the platform"
+        }
+      ]
+    },
     {
       company: "MFilterit",
       position: "Software Engineer",
