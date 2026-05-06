@@ -1,7 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPython } from "react-icons/fa";
+import { FaPython, FaUsers, FaLightbulb, FaClock, FaSearch } from "react-icons/fa";
 import { SiFastapi } from "react-icons/si";
+import { MdChat, MdLoop, MdStar, MdPsychology } from "react-icons/md";
+
+const softSkills = [
+  { name: "Communication", icon: MdChat },
+  { name: "Problem Solving", icon: FaLightbulb },
+  { name: "Team Work", icon: FaUsers },
+  { name: "Leadership", icon: MdStar },
+  { name: "Adaptability", icon: MdLoop },
+  { name: "Time Management", icon: FaClock },
+  { name: "Critical Thinking", icon: MdPsychology },
+  { name: "Attention to Detail", icon: FaSearch },
+];
 
 const variants = (duration) => ({
   initial: { y: -10 },
@@ -117,6 +129,32 @@ const TechStacks = () => {
 
       <div className="mx-auto md:scale-80">
         <img src="/Group1940.svg" alt="" />
+      </div>
+
+      {/* Soft Skills */}
+      <div className="mt-16 mb-4">
+        <h2 className="text-[2rem] font-bold text-center mb-8 text-white josefin-sans-font">
+          Soft Skills
+        </h2>
+        <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">
+          {softSkills.map((skill, index) => {
+            const Icon = skill.icon;
+            return (
+              <motion.div
+                key={skill.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.07 }}
+                whileHover={{ scale: 1.08 }}
+                className="flex items-center gap-2 px-5 py-2 rounded-full border border-purple-500/40 bg-purple-900/20 text-white text-sm poppins-regular cursor-default"
+              >
+                <Icon className="text-purple-400 text-base" />
+                <span>{skill.name}</span>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

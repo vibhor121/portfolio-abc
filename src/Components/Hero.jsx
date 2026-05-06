@@ -13,14 +13,21 @@ const Hero = () => {
     window.open('/vibhor_resume.pdf', '_blank', 'noopener,noreferrer');
   };
 
-  const handleDownloadCV = () => {
-    // Create a temporary link to trigger download
-    const link = document.createElement('a');
-    link.href = '/vibhor_resume.pdf';
-    link.download = 'vibhor_resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleDownloadCV = async () => {
+    try {
+      const response = await fetch('/vibhor_resume.pdf');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'vibhor_resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch {
+      window.open('/vibhor_resume.pdf', '_blank');
+    }
   };
 
   return (
