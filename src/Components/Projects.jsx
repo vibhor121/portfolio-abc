@@ -24,20 +24,20 @@ const Projects = () => {
               Featured Project
             </h1>
             <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
-              Website Builder
+              EduLearn
             </h1>
             <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
-              A modern website builder application that allows users to create and customize their own websites with a simple and intuitive drag-and-drop interface. Users can select templates, customize backgrounds, and apply various design options with secure authentication through Auth0. <br />
-              Tech Stacks :- React, JavaScript, HTML, CSS, Auth0
+              A comprehensive e-learning platform that enables users to enroll in courses, watch video lessons, track progress, and earn certificates. Features role-based access for Students, Instructors, and Admins with JWT authentication, course management, and an analytics dashboard. <br />
+              Tech Stacks :- React.js, Node.js, Express.js, MongoDB, JWT, Tailwind CSS
             </p>
             <div className="flex gap-6 mt-9 text-3xl">
               <a
-                href="https://github.com/vibhor121/Clause-Cloud_029"
+                href="https://github.com/vibhor121/Online-Learning"
                 target="_blank"
               >
                 <FaGithub />
               </a>
-              <a href="https://clause-cloud-029-rh9lzo3g0-vibhors-projects-d6b1e7df.vercel.app/" target="_blank">
+              <a href="https://online-learning-frontend-two.vercel.app/" target="_blank">
                 <IoGlobeOutline />
               </a>
             </div>
@@ -45,12 +45,12 @@ const Projects = () => {
           {/* img */}
           <div className="md:w-[30%] w-[85%] mb-10 md:mb-0 md:relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
             <a
-              href="https://github.com/vibhor121/Clause-Cloud_029"
+              href="https://github.com/vibhor121/Online-Learning"
               target="_blank"
             >
               <img
-                src="/websitebuilder.png"
-                alt="Website Builder Screenshot"
+                src="/online-learning1.png"
+                alt="EduLearn Screenshot"
                 className="rounded-lg"
               />
             </a>
