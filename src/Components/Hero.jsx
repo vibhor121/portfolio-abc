@@ -3,31 +3,18 @@ import { BsInstagram } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { GoDownload } from "react-icons/go";
-import { FaEye } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Typed from "./Typed";
 
 const Hero = () => {
-  const handleViewCV = () => {
-    // Open CV in new tab for viewing
+  const handleResume = () => {
     window.open('/vibhor_resume.pdf', '_blank', 'noopener,noreferrer');
-  };
-
-  const handleDownloadCV = async () => {
-    try {
-      const response = await fetch('/vibhor_resume.pdf');
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'vibhor_resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    } catch {
-      window.open('/vibhor_resume.pdf', '_blank');
-    }
+    const link = document.createElement('a');
+    link.href = '/vibhor_resume.pdf';
+    link.download = 'vibhor_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -143,28 +130,11 @@ const Hero = () => {
                     type: "spring",
                     stiffness: 150,
                   }}
-                  onClick={handleViewCV}
-                >
-                  <FaEye className="text-white" />
-                  <span className="text-white josefin-sans-font mt-1">
-                    View CV
-                  </span>
-                </motion.div>
-                <motion.div
-                  className="rounded-full w-fit flex items-center py-2 px-5 gap-2 btn-grad cursor-pointer"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    delay: 0.9,
-                    duration: 0.5,
-                    type: "spring",
-                    stiffness: 150,
-                  }}
-                  onClick={handleDownloadCV}
+                  onClick={handleResume}
                 >
                   <GoDownload className="text-white" />
                   <span className="text-white josefin-sans-font mt-1">
-                    Download CV
+                    Resume
                   </span>
                 </motion.div>
               </div>
@@ -222,7 +192,7 @@ const Hero = () => {
       </div>
       {/* scroll wheel */}
       <div className="md:w-[13%] w-[40%] mx-auto md:mt-10 mt-14 ">
-        <a href="#skills">
+        <a href="#about">
           <img
             src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif"
             className="cursor-pointer"

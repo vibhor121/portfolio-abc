@@ -16,8 +16,11 @@ function App() {
       <div className="relative z-10 min-h-screen bg-[#030014]">
         <Navbar />
         <div className="pt-32 sm:pt-0">
-          <section id="hero" className="">
+          <section id="home" className="">
             <Hero />
+          </section>
+          <section id="about">
+            <About />
           </section>
           <section id="skills">
             <TechStacks />
@@ -27,9 +30,6 @@ function App() {
           </section>
           <section id="projects">
             <Projects />
-          </section>
-          <section id="about">
-            <About />
           </section>
           <section id="contact">
             <ContactForm />

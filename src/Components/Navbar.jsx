@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaCode } from "react-icons/fa";
-import { MdArrowOutward, MdDownload, MdVisibility, MdMenu, MdClose } from "react-icons/md";
+import { MdArrowOutward, MdMenu, MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,21 +13,14 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const handleDownload = async () => {
-    try {
-      const response = await fetch('/vibhor_resume.pdf');
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'vibhor_resume.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    } catch {
-      window.open('/vibhor_resume.pdf', '_blank');
-    }
+  const handleResume = () => {
+    window.open('/vibhor_resume.pdf', '_blank', 'noopener,noreferrer');
+    const link = document.createElement('a');
+    link.href = '/vibhor_resume.pdf';
+    link.download = 'vibhor_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   // Close mobile menu when clicking outside or on escape key
@@ -61,14 +54,14 @@ const Navbar = () => {
         {/* Desktop Layout */}
         <div className="hidden lg:flex items-center justify-between">
           <a
-            href="#"
+            href="#home"
             className="cursor-pointer hover:text-purple-400 transition duration-300"
           >
             <FaCode className="text-4xl" />
           </a>
           <div className="nvrt flex items-center gap-6 xl:gap-10 text-sm xl:text-base">
             <a
-              href="#"
+              href="#home"
               className="cursor-pointer hover:text-purple-400 transition duration-300"
             >
               Home
@@ -97,25 +90,12 @@ const Navbar = () => {
             >
               Projects
             </a>
-            <div className="flex items-center gap-2">
-              <a
-                href="/vibhor_resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer hover:text-purple-400 transition duration-300 flex items-center gap-1"
-                title="View Resume"
-              >
-                <MdVisibility className="text-sm" />
-                Resume
-              </a>
-              <button
-                onClick={handleDownload}
-                className="cursor-pointer hover:text-purple-400 transition duration-300"
-                title="Download Resume"
-              >
-                <MdDownload className="text-sm" />
-              </button>
-            </div>
+            <button
+              onClick={handleResume}
+              className="cursor-pointer hover:text-purple-400 transition duration-300"
+            >
+              Resume
+            </button>
           </div>
           <div className="flex">
             <a href="#contact">
@@ -134,7 +114,7 @@ const Navbar = () => {
           {/* Mobile Header with Hamburger */}
           <div className="flex items-center justify-between">
             <a
-              href="#"
+              href="#home"
               className="cursor-pointer hover:text-purple-400 transition duration-300"
               onClick={closeMobileMenu}
             >
@@ -159,7 +139,7 @@ const Navbar = () => {
           }`}>
             <div className="flex flex-col items-center space-y-4 pb-4">
               <a
-                href="#"
+                href="#home"
                 className="cursor-pointer hover:text-purple-400 transition duration-300 text-lg font-light"
                 onClick={closeMobileMenu}
               >
@@ -193,26 +173,12 @@ const Navbar = () => {
               >
                 Projects
               </a>
-              <div className="flex items-center gap-3">
-                <a
-                  href="/vibhor_resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="cursor-pointer hover:text-purple-400 transition duration-300 text-lg font-light flex items-center gap-2"
-                  title="View Resume"
-                  onClick={closeMobileMenu}
-                >
-                  <MdVisibility className="text-lg" />
-                  Resume
-                </a>
-                <button
-                  onClick={() => { handleDownload(); closeMobileMenu(); }}
-                  className="cursor-pointer hover:text-purple-400 transition duration-300"
-                  title="Download Resume"
-                >
-                  <MdDownload className="text-lg" />
-                </button>
-              </div>
+              <button
+                onClick={() => { handleResume(); closeMobileMenu(); }}
+                className="cursor-pointer hover:text-purple-400 transition duration-300 text-lg font-light"
+              >
+                Resume
+              </button>
               <a href="#contact" className="mt-2" onClick={closeMobileMenu}>
                 <button className="flex items-center gap-2 text-sm btn-grad text-white px-4 py-2 rounded-full font-light transition duration-300">
                   Contact Me{" "}
