@@ -194,9 +194,9 @@ const Hero = () => {
       <div className="md:w-[13%] w-[40%] mx-auto md:mt-10 mt-14 ">
         <a href="#about">
           <img
-            src="https://bearwise.org/wp-content/uploads/2015/04/scroll.gif"
-            className="cursor-pointer"
-            alt=""
+            src="/Arrow.svg"
+            className="cursor-pointer mx-auto animate-bounce"
+            alt="Scroll down"
           />
         </a>
       </div>
