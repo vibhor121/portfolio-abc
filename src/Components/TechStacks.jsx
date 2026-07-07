@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaPython, FaUsers, FaLightbulb, FaClock, FaSearch } from "react-icons/fa";
-import { SiFastapi } from "react-icons/si";
+import { SiDocker, SiFastapi } from "react-icons/si";
 import { MdChat, MdLoop, MdStar, MdPsychology } from "react-icons/md";
 
 const softSkills = [
@@ -86,6 +86,13 @@ const TechStacks = () => {
           animate="animate"
         >
           <SiFastapi className="text-4xl md:text-5xl text-green-500" />
+        </motion.div>
+        <motion.div
+          variants={variants(7)}
+          initial="initial"
+          animate="animate"
+        >
+          <SiDocker className="text-4xl md:text-5xl text-sky-500" />
         </motion.div>
       </div>
 
