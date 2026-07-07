@@ -57,6 +57,56 @@ const Projects = () => {
           </div>
         </motion.div>
         <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="relative flex flex-col-reverse md:flex-row items-center justify-center mt-20 md:space-x-16"
+        >
+          {/* content */}
+          <div className="text-white w-[85%] mt-10 md:w-[40%]">
+            <h1 className="text-sm text-purple-600 font-semibold">
+              Featured Project
+            </h1>
+            <h1 className="text-4xl font-bold mt-3 mb-5 josefin-sans-font">
+              Highlight Saver (Chrome Extension)
+            </h1>
+            <p className="mt-4 bg-purple-700 bg-opacity-10 shadow-md shadow-purple-900 background-blur p-6 rounded-lg">
+              A Chrome extension that lets you highlight text on any website and
+              save it instantly. Saved highlights are stored locally in the
+              browser and shown in a clean popup where you can review and delete
+              them. It also supports optional AI summarization using your own
+              Gemini/OpenAI API key (stored locally). <br />
+              Tech Stacks :- Next.js, Tailwind CSS, Chrome Extension APIs,
+              LocalStorage, Bun (build), AI Summary (optional)
+            </p>
+            <div className="flex gap-6 mt-9 text-3xl">
+              <a
+                href="https://github.com/vibhor121/cactro050726"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1--Tf2TEPQxwz4Ma6j4IZLjh_MegT9da6/view"
+                target="_blank"
+              >
+                <IoGlobeOutline />
+              </a>
+            </div>
+          </div>
+          {/* img */}
+          <div className="md:w-[30%] w-[85%] relative rounded-xl border-l-4 border-t-4 border-[#1a0523] shadow-2xl shadow-purple-700">
+            <a href="https://github.com/vibhor121/cactro050726" target="_blank">
+              <img
+                src="/highlight-saver-demo.jpg"
+                alt="Highlight Saver Chrome Extension Screenshot"
+                className="rounded-lg"
+              />
+            </a>
+          </div>
+        </motion.div>
+        <motion.div
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
